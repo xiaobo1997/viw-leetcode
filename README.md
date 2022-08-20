@@ -1,2 +1,3 @@
 # viw-leetcode
-我的leetcode记录
+
+记录自己的leetcode刷题过程
