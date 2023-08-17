@@ -39,7 +39,8 @@ System.out.println(b<<2);//12
 ```
 ### 字符串
 
-- @Test
+
+```- @Test
     public void sttringtest() {
         //String
         String str = "abc";
@@ -51,16 +52,25 @@ System.out.println(b<<2);//12
         sb.append("d");
         sb.toString();
     }
+```
+
 
 ### 数组
 
-- public void array() {
+```
+
+public void array() {
 var arr = new int[2];// = var arr1 = new int[]{2,1};
 var arr2 = new int[2][2];// = var arr21 = new int[][]{{1,2},{3,4}};
 var x = arr2.length;
 var y = arr2[0].length;
 Arrays.sort(arr);
+
+Arrays.fill(arr,-1);//将指定的 int 值分配给指定的整数数组的每个元素
+
 }
+
+```
 
 ### list
 
@@ -84,7 +94,7 @@ var list = new ArrayList<Integer>();
 ```
 
 ### 栈
-
+```
 - public void stack() {
 var stack = new Stack<Integer>();
 stack.isEmpty();//栈是否为空
@@ -93,10 +103,12 @@ stack.pop();//返回并删除栈顶元素
 stack.peek();//返回栈顶元素
 stack.search(1);//返回从上到下元素出现位置(从1开始)，
 }
-
+```
 ### 队列
 
-```java
+```
+
+java
 @Test
 public void queue(){
 Deque deque = new LinkedList<Integer>();
@@ -112,10 +124,11 @@ deque.peek();//返回首元素
 deque.peekLast();//返回尾元素
 deque.poll();//返回并删除首元素
 deque.pollLast();//返回并删除尾元素
+deque.add(1);//尾插
 }
 ```
 ### 基于堆的优先级队列
-
+```
 - @Test
     public void queueHeap(){
         //基于堆的优先级队列(自然排序)
@@ -131,9 +144,11 @@ deque.pollLast();//返回并删除尾元素
         System.out.println(iterator.hasNext());
         p.stream().forEach(System.out::println);
     }
+```
+
 
 ### set
-
+```
 - public void set(){
 //去除
 var set = new HashSet<Integer>();
@@ -144,9 +159,10 @@ set.remove(1);//删除指定元素
 set.contains(1);//是否查找指定元素
 set.size();//元素数量
 }
+```
 
 ### map
-
+```
 - public void map(){
 var map = new HashMap<Integer,Integer>();
 map.getOrDefault(1,0);//获取key为1的value,如果没有就赋此key的value为0
@@ -158,7 +174,7 @@ map.values();//获取value组成的集合
 map.remove(1);//删除指定元素
 map.remove(1, 1);//删除指定元素 成功返回true 失败返回 false
 }
-
+```
 ## 排序
 
 ## 数组
