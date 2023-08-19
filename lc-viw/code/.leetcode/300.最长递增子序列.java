@@ -21,6 +21,8 @@ class Solution {
             //遍历
             for(int j = 0;j<i;j++){
                 if(nums[j]<nums[i]){
+                    // 维持小数组  如i=2 计算一次 是2 那么dp[2]=2
+                    //i=3 计算一次是dp[i]=2  dp[j=2]=2+1 = 3
                     dp[i] = Math.max(dp[i],dp[j]+1);
                 }
             }
