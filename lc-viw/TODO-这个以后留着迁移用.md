@@ -177,6 +177,31 @@ map.remove(1, 1);//删除指定元素 成功返回true 失败返回 false
 ```
 ## 排序
 
+
+### 冒泡排序
+
+
+```
+@Test
+    public void sort(){
+        int[] arr = new int[]{2,1,3};
+        if (arr.length>0){
+            for (int i = 1;i<arr.length;i++)
+                for (int j = 0;j<i;j++){
+                    if(arr[j]>arr[j+1]){
+                        int temp = arr[i];
+                        arr[i] = arr[j+1];
+                        arr[j+1] = temp;
+                    }
+                }
+
+        }
+    }
+
+```
+
+
+
 ## 数组
 
 ### 统计&求次数 
