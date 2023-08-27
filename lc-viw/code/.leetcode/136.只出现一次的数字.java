@@ -21,3 +21,14 @@ class Solution {
     }
 }
 // @lc code=end
+
+class Solution {
+    /**
+     * 1&1=1  0&1=0 0&0=0
+     * 1|1=1  1|0=1 0|0=0
+     * 1^1=0  0^1=1 0^0=1
+     */
+    public int singleNumber(int[] nums) {
+       
+    }
+}
