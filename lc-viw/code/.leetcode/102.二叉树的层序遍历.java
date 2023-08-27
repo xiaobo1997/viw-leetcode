@@ -49,3 +49,27 @@ class Solution {
 }
 // @lc code=end
 
+class A{
+
+public List<List<Integer>> levelOrder(TreeNode root) {
+       List<List<Integer>> res  = new LinkedList();
+       Deque<TreeNode> list =new LinkedList();
+       list.add(root);
+       while(!list.isEmpty()){
+            int levenNum = list.size();
+            List<Integer> tempList = new LinkedList();
+            for(TreeNode node : list){
+                if(node.peek().left!=null) 
+                    list.offer(list.peek().left);
+                if(node.peek().right!=null)
+                    list.offer(list.peek().right);
+                tempList.add(list.poll().val);
+            }
+            res.add(tempList);
+       }
+       
+       return res;
+    }
+
+
+}
