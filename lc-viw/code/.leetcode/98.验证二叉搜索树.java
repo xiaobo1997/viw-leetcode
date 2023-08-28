@@ -21,22 +21,18 @@
  * }
  */
 class Solution {
-    long pre = Integer.MIN_VALUE;
+    TreeNode pre = null;
     public boolean isValidBST(TreeNode root) {
-            if(root==null){
-                return true;
-            }
-            if(!isValidBST(root.left)){
-                return false;
-            }
-            if(root.val<=pre) return false;
-            pre =root.val;
+            if(root==null) return true;
+            if(!isValidBST(root.left)) return false;
+            if(pre!=null && pre.val>=root.val)return false;
+            pre =root;
             return isValidBST(root.right);
     }
 }
 // @lc code=end
 
-class Solution {
+class A {
     public boolean isValidBST(TreeNode root) {
         
     }
