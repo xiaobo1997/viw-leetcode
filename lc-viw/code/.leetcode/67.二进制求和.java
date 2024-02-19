@@ -18,3 +18,8 @@ class Solution {
 }
 // @lc code=end
 
+class A {
+    public String addBinary(String a, String b) {
+       
+    }
+}

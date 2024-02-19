@@ -31,6 +31,13 @@ class Solution {
 
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    
+        return dfs(l1,l2,0);
+    }
+    void dfs(ListNode l1,ListNode l2,int i){
+       if(l1==null&&l2==null&&i==0) return null;
+       int sum = (1l==null?0:l1.val)+(l2==null?0:l2.val)+i;
+       var node = new ListNode(sum%10);
+       node.next = dfs(l1==null?null:l1.next,l2==null?null:l2.next);
+       return node;
     }
 }

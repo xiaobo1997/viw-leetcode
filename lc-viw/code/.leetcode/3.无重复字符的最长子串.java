@@ -71,17 +71,13 @@ class A{
         Deque<Character> list = new LinkedList();
         int res = 0;
         if(s.length()<1) return 0;
-        for(char c: s.toCharArray()){
-            
+        for(char c : s.toCharArray()){
             while(list.contains(c)){
                 list.poll();
             }
-
             list.add(c);
-            res = Math.max(res,list.size());
+            res= Math.max(res,list.size());
         }
-        
         return res;
-
     }
 }

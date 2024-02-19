@@ -33,7 +33,20 @@ class Solution {
 // @lc code=end
 
 class Solution {
+    // [1,2,3] n=1  删除3  slow=1 fast=2
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        
+       ListNode slow = head,fast = head;
+        for(int i = 0;i<n;i++){
+            fast = fast.next;
+        }
+        if(fast==null) return head;
+        while(fast!=null){
+            slow= slow.next;
+            fast = fast.next;
+        }
+        slow.next = slow.next.next;
+        return head;
+
+
     }
 }

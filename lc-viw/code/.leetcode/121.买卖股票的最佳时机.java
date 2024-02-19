@@ -17,4 +17,14 @@ class Solution {
     }
 }
 // @lc code=end
-
+    //动态规划
+    // [7,6,4,3,1]   0
+    public int maxProfit(int[] prices) {
+        int min = Integer.MAX_VALUE,res=0;
+        for(int i : prices){
+            min = Math.min(i,min);
+            res = Math.max(res,i-min);
+        }
+        return res;
+    }
+}
