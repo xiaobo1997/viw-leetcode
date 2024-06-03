@@ -37,7 +37,7 @@ class  A{
             int temp = target - nums[i];
             if(map.containsKey(temp)){
                 res[0] = i;
-                res[1] = map.get(temp);
+                res[1] = map.get(temp); 
             }
             map.put(nums[i],i);
         }
