@@ -5,7 +5,7 @@ import java.util.Stack;
  *
  * [20] 有效的括号
  */
-
+//LeetCode 热题 100
 // @lc code=start
 class Solution {
     public boolean isValid(String s) {
@@ -30,7 +30,7 @@ class Solution {
 class A {
 
     public boolean isValid(String s) {
-        // () 
+        // ()
          Stack<Character> stack = new Stack();
          for(char c:s.toCharArray()){
                 if(c=='(') stack.push(')');
@@ -38,7 +38,7 @@ class A {
                 else if(stack.pop()!=c||!stack.isEmpty()){
                     return false;
                 }
-         }  
+         }
 
          return true;
     }

@@ -15,6 +15,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+//LeetCode 热题 100
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if(list1 == null) return list2;
@@ -24,7 +25,7 @@ class Solution {
             return list1;
         }else{
             list2.next = mergeTwoLists(list1,list2.next);
-            return list2;            
+            return list2;
         }
     }
 }

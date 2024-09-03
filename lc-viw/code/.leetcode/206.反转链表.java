@@ -15,7 +15,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-
+//LeetCode 热题 100
 class Solution {
     public ListNode reverseList(ListNode head) {
         //双指针 让他们交换位置
@@ -26,7 +26,7 @@ class Solution {
         while(right!=null){
             //先记录right的下一个节点2
             temp = right.next;
-            
+
             //right的下一个指向left 也就是第一次的null
             right.next = left;
             //left前进一步

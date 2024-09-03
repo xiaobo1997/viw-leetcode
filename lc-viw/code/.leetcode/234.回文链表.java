@@ -15,6 +15,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+//LeetCode 热题 100
 class Solution {
     ListNode temp;
     public boolean isPalindrome(ListNode head) {
@@ -34,6 +35,6 @@ class Solution {
 
 class Solution {
     public boolean isPalindrome(ListNode head) {
-        
+
     }
 }

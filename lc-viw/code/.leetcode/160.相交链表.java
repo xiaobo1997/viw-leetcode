@@ -16,11 +16,12 @@
  *     }
  * }
  */
+//LeetCode 热题 100
 public class Solution {
     //    1->3-4
     // 1->2->3-4
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        if(headA == null || headB == null) return null; 
+        if(headA == null || headB == null) return null;
         ListNode a = headA;
         ListNode b = headB;
         while(a!=b){
@@ -43,5 +44,5 @@ class A{
             b = b==null?headA:b.next;
        }
        return a;
-    }    
+    }
 }

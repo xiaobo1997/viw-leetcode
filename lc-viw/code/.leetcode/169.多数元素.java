@@ -3,7 +3,7 @@
  *
  * [169] 多数元素
  */
-
+//LeetCode 热题 100
 // @lc code=start
 class Solution {
     // public int majorityElement(int[] nums) {
@@ -23,7 +23,7 @@ class Solution {
             else count--;
         }
         return res;
-        
+
     }
 }
 // @lc code=end
@@ -38,6 +38,6 @@ class Solution {
             else count --;
         }
         return res;
-        
+
     }
 }

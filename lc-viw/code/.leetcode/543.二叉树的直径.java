@@ -20,6 +20,7 @@
  *     }
  * }
  */
+//LeetCode 热题 100
 class Solution {
     int res = 0;
     public int diameterOfBinaryTree(TreeNode root) {

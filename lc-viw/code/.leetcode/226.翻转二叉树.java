@@ -20,6 +20,7 @@
  *     }
  * }
  */
+//LeetCode 热题 100
 class Solution {
     public TreeNode invertTree(TreeNode root) {
         if(root == null) return null;
@@ -34,6 +35,6 @@ class Solution {
 
 class Solution {
     public TreeNode invertTree(TreeNode root) {
-        
+
     }
 }

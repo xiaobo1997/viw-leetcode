@@ -3,7 +3,7 @@
  *
  * [155] 最小栈
  */
-
+//LeetCode 热题 100
 // @lc code=start
 class MinStack {
     int min = Integer.MAX_VALUE;
@@ -12,7 +12,7 @@ class MinStack {
     public MinStack() {
 
     }
-    
+
     public void push(int val) {
         if(val<=min){
             stack.push(min);
@@ -20,15 +20,15 @@ class MinStack {
         }
         stack.push(val);
     }
-    
+
     public void pop() {
         if(stack.pop()==min) min= stack.pop();
     }
-    
+
     public int top() {
         return stack.peek();
     }
-    
+
     public int getMin() {
         return min;
     }
@@ -49,9 +49,9 @@ class MinStack {
     int min = Integer.MAX_VALUE;
     Stack<Integer> stack = new Stack();
     public MinStack() {
-       
+
     }
-    
+
     // todo
     public void push(int val) {
         if(val<min){
@@ -60,15 +60,15 @@ class MinStack {
         }
         stack.push(val);
     }
-    
+
     public void pop() {
         if(stack.pop()==min) min= stack.pop();
     }
-    
+
     public int top() {
         return stack.peek();
     }
-    
+
     public int getMin() {
         return min;
     }

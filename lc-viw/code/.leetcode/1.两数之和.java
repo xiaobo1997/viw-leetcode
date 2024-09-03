@@ -6,7 +6,7 @@ import java.util.Map;
  *
  * [1] 两数之和
  */
-
+//LeetCode 热题 100
 // @lc code=start
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -37,7 +37,7 @@ class  A{
             int temp = target - nums[i];
             if(map.containsKey(temp)){
                 res[0] = i;
-                res[1] = map.get(temp); 
+                res[1] = map.get(temp);
             }
             map.put(nums[i],i);
         }
