@@ -20,6 +20,9 @@
  *     }
  * }
  */
+
+ //LeetCode 热题 100
+
 class Solution {
     private int i = 0;
     private int p = 0;
@@ -43,12 +46,12 @@ class Solution {
 // @lc code=end
 
 class Solution {
-   
+
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         return build(preorder,inorder,Integer.MIN_VALUE);
     }
     private TreeNode build(int[] preorder,int[] inorder,int stop){
-    
+
 
     }
 }

@@ -6,6 +6,8 @@ import java.util.*;
  * [3] 无重复字符的最长子串
  */
 
+ //LeetCode 热题 100
+
 // @lc code=start
 class Solution {
     // public int lengthOfLongestSubstring(String s) {
@@ -39,20 +41,20 @@ class Solution {
     //         while(window.contains(s.charAt(right))){
     //             window.remove(s.charAt(left++));
     //         }
-            
+
     //         window.add(s.charAt(right++));
     //         maxLength = Math.max(maxLength,right-left);
 
     //     }
-    //     return maxLength;   
+    //     return maxLength;
     // }
 
       public int lengthOfLongestSubstring(String s) {
         Deque<Character>  list = new LinkedList();
         int res = 0;
-        if(s.length() <1) return 0; 
+        if(s.length() <1) return 0;
         for(char c : s.toCharArray()){
-            
+
             while(list.contains(c)){
                 list.poll();
             }

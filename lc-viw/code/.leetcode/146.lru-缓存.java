@@ -7,6 +7,8 @@ import java.util.Map;
  * [146] LRU 缓存
  */
 
+ //LeetCode 热题 100
+
 // @lc code=start
 class LRUCache {
 
@@ -16,7 +18,7 @@ class LRUCache {
     public LRUCache(int capacity) {
         this.cap = capacity;
     }
-    
+
 
     public int get(int key) {
         //如果不存在直接返回-1
@@ -27,7 +29,7 @@ class LRUCache {
         makeKey(key);
         return cache.get(key);
     }
-    
+
     public void put(int key, int value) {
         //已经存在了，覆盖
         if(cache.containsKey(key)){
