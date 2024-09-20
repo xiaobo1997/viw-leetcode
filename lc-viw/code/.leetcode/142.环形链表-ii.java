@@ -16,6 +16,7 @@
  *     }
  * }
  */
+LeetCode 热题 100
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head,fast = head;
@@ -28,7 +29,7 @@ public class Solution {
         while(head !=slow){
             head = head.next;
             slow = slow.next;
-        }       
+        }
         return head;
     }
 }
@@ -37,7 +38,7 @@ public class Solution {
 
 public class Solution {
     public ListNode detectCycle(ListNode head) {
-        
+
     }
 }
 

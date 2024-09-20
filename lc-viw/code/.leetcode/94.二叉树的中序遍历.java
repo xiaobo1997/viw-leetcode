@@ -22,6 +22,7 @@ import java.util.List;
  *     }
  * }
  */
+LeetCode 热题 100
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
        List<Integer> res = new ArrayList();
@@ -40,7 +41,7 @@ class Solution {
 
 class A{
   public List<Integer> inorderTraversal(TreeNode root) {
-        
+
     }
 
 }

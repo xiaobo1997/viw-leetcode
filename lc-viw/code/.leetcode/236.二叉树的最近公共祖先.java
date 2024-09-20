@@ -14,6 +14,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+LeetCode 热题 100
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root==null || root == p || root == q) return root;
@@ -27,6 +28,6 @@ class Solution {
 
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        
+
     }
 }

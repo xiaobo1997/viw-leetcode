@@ -15,6 +15,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+LeetCode 热题 100
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode fast = head,slow = head;

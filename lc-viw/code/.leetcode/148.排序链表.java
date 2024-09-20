@@ -15,6 +15,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+LeetCode 热题 100
 class Solution {
     public ListNode sortList(ListNode head) {
         if(head==null) return null;
@@ -37,6 +38,6 @@ class Solution {
 
 class Solution {
     public ListNode sortList(ListNode head) {
-        
+
     }
 }

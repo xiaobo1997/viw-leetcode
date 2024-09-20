@@ -3,7 +3,7 @@
  *
  * [22] 括号生成
  */
-
+LeetCode 热题 100
 // @lc code=start
 class Solution {
 
@@ -15,13 +15,13 @@ class Solution {
 
     void generate(List<String> list,String s,int open,int close,int max){
         if(s.length()==max*2){
-            list.add(s);                
-            return;                
+            list.add(s);
+            return;
         }
         if(open<max)
             generate(list,s+"(",open+1,close,max);
         if(close<open)
-            generate(list,s+")",open,close+1,max);                
+            generate(list,s+")",open,close+1,max);
     }
 }
 // @lc code=end

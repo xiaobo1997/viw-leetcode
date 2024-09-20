@@ -6,7 +6,7 @@
 输出：[[1,5]]
 解释：区间 [1,4] 和 [4,5] 可被视为重叠区间。
  */
-
+LeetCode 热题 100
 // @lc code=start
 class Solution {
     public int[][] merge(int[][] intervals) {

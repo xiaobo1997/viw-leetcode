@@ -3,7 +3,7 @@
  *
  * [5] 最长回文子串
  */
-
+LeetCode 热题 100
 // @lc code=start
 class Solution {
     // babc  left=0 right=2
@@ -49,7 +49,7 @@ class A{
     }
 
     private void found(String s,int l,int f){
-        
+
         while(l>=0&&f<s.length() && s.charAt(l)==s.charAt(f)){
             l--; // 0   0
             f++; // 1  2
