@@ -32,4 +32,4 @@ https://github.com/LLancelot/LeetCode#tree
 https://github.com/geekxh/hello-algorithm
 https://leetcode.cn/studyplan/top-100-liked/
 https://leetcode.cn/studyplan/top-interview-150/
-
+https://chienmy.gitbook.io/algorithm-pattern-java/shu-ju-jie-gou/linked_list
