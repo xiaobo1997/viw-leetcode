@@ -2,8 +2,8 @@
  * @lc app=leetcode.cn id=5 lang=java
  *
  * [5] 最长回文子串
+ * LeetCode 热题 100
  */
-LeetCode 热题 100
 // @lc code=start
 class Solution {
     // babc  left=0 right=2

@@ -15,7 +15,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-LeetCode 热题 100
+//LeetCode 热题 100
 class Solution {
      public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return dfs(l1,l2,0);
@@ -29,6 +29,14 @@ class Solution {
     }
 }
 // @lc code=end
+
+   class ListNode {
+      int val;
+      ListNode next;
+      ListNode() {}
+      ListNode(int val) { this.val = val; }
+      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+  }
 
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
